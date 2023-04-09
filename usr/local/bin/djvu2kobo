@@ -1,0 +1,4 @@
+#!/bin/bash
+# Converts all pdf files in a directory to djvu files
+# Read man pdf2djvu for more info
+for file in *.pdf; do pdf2djvu --dpi=600 --no-text --jobs=0 -o "${file%.pdf}.djvu" "$file"; done
