@@ -10,12 +10,12 @@ end
 -- Package manager
 require "paq" {
     "savq/paq-nvim";
-    "gbprod/nord.nvim";
+    "mofiqul/dracula.nvim";
     "norcalli/nvim-colorizer.lua";
 }
 
 -- Theme
-vim.cmd.colorscheme("nord")
+vim.cmd.colorscheme("dracula")
 
 -- Text formatting
 vim.o.encoding = 'utf-8'
@@ -38,22 +38,6 @@ vim.cmd[[set statusline+=%=]]       -- Space
 vim.cmd[[set statusline+=\ %y]]     -- Filetype                    
 vim.cmd[[set statusline+=\ [%{&fileencoding}] ]]                   
 vim.cmd[[set statusline+=\ %l:%c]]  -- Current line and character
-
--- Mapleader
-vim.g.mapleader = ","
-
--- Autocompile and run
-vim.api.nvim_create_augroup('compileAndRun', { clear = true })  
-
--- LaTeX
-vim.api.nvim_create_autocmd('FileType', {
-  group = 'compileAndRun',
-  pattern = 'tex',
-  callback = function()
-    vim.api.nvim_set_keymap(
-      'n', '<Leader>c', ':w<CR>:split|:terminal!latexmk -pvc -f -verbose -file-line-error -synctex=1 -interaction=nonstopmode -pdf % <CR>', { noremap = true, silent = true })
-end,
-})
 
 -- Disable builtins
 vim.g.loaded_tutor             = 1

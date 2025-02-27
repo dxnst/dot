@@ -19,10 +19,9 @@
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
-	theme = nord
+	theme = dracula
 	font-family = Agave Nerd Font
-	font-size = 11
-	window-decoration = none
+	font-size = 14
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
