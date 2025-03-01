@@ -4,7 +4,7 @@
 
 font pango: Agave Nerd Font 12
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -14,13 +14,10 @@ set $right l
 # Set default utilities
 set $term ghostty
 set $menu fuzzel
-set $pass fuzzel-pass.sh
-set $pass-user fuzzel-pass-user.sh
-set $pass-otp fuzzel-otp.sh
 # set $suspend doas pm-suspend
 
 # Output configuration
-output * bg /home/dani/bg/fedora.png fill
+output * bg ~/bg/current.png fill
 
 ### Input configuration
 # Keychron K6 wired mode
@@ -53,13 +50,13 @@ output * bg /home/dani/bg/fedora.png fill
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+space exec $menu
 	bindsym $mod+shift+p exec $pass
 	bindsym $mod+shift+u exec $pass-user
 	bindsym $mod+shift+o exec $pass-otp
@@ -76,7 +73,7 @@ output * bg /home/dani/bg/fedora.png fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+q exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -149,7 +146,7 @@ output * bg /home/dani/bg/fedora.png fill
     bindsym $mod+Shift+space floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    # bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
