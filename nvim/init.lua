@@ -10,12 +10,12 @@ end
 -- Package manager
 require "paq" {
     "savq/paq-nvim";
-    "mofiqul/dracula.nvim";
+    "gbprod/nord.nvim";
     "norcalli/nvim-colorizer.lua";
 }
 
 -- Theme
-vim.cmd.colorscheme("dracula")
+vim.cmd.colorscheme("nord")
 
 -- Text formatting
 vim.o.encoding = 'utf-8'
