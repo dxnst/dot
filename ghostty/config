@@ -21,8 +21,10 @@
 # # separated by equals signs.
 	theme = nord
 	font-family = Agave Nerd Font
-	font-size = 14
-# window-padding-x = 2
+	font-size = 18
+	window-decoration = none
+	window-padding-y = 0
+	window-padding-x = 0
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
