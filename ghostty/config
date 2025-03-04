@@ -21,7 +21,7 @@
 # # separated by equals signs.
 	theme = nord
 	font-family = Agave Nerd Font
-	font-size = 18
+	font-size = 22
 	window-decoration = none
 	window-padding-y = 0
 	window-padding-x = 0
