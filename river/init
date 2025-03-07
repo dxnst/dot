@@ -2,8 +2,8 @@
 # Set keyboard layout to latam
 riverctl keyboard-layout latam
 
-# Alt+Enter to start an instance of ghostty (https://ghostty.org)
-riverctl map normal Alt+Shift Return spawn ghostty
+# Alt+Enter to start an instance of ghostty (https://alacritty.org)
+riverctl map normal Alt+Shift Return spawn alacritty
 
 # Alt+Space to start fuzzel (https://codeberg.org/dnkl/fuzzel)
 riverctl map normal Alt Space spawn fuzzel
