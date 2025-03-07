@@ -1,0 +1,6 @@
+set shell zsh
+
+map . set hidden!
+map D delete
+
+
