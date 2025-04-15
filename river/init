@@ -1,5 +1,8 @@
 !/bin/sh
-# Spawn yambar
+# Spawn wireplumber (session manager for pipewire)
+riverctl spawn wireplumber
+
+# Spawn yambar (https://codeberg.org/dnkl/yambar)
 riverctl spawn yambar
 
 # Set keyboard layout to latam
