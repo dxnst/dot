@@ -1,15 +1,18 @@
+# Prompt configuration
+
 PS1='%F{blue}%~ %(?.%F{green}.%F{red})%#%f '
 
-if [[ $OSTYPE == darwin* ]]; then
-    FPATH=/opt/local/share/zsh/site-functions/:$FPATH
-    autoload -Uz compinit
-    compinit
-elif [[ $OSTYPE == linux* ]]; then
-	autoload -Uz compinit
-	compinit
-fi
+# The following lines were added by compinstall
 
+zstyle ':completion:*' completer _complete _ignored
+zstyle :compinstall filename '/home/star/.zshrc'
 
-if [[ $OSTYPE == darwin* ]]; then
-	source /opt/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile~~
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
