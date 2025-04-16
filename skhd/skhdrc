@@ -77,9 +77,7 @@
 # ############################################################### #
 
 # open terminal (https://ghostty.org)
-cmd + shift - return : /opt/local/bin/alacritty
-
-cmd + shift - z : /opt/homebrew/bin/zathura
+cmd + shift - return : open -n /Applications/Ghostty.app
 
 # focus window
 # alt - h : yabai -m window --focus west
