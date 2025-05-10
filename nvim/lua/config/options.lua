@@ -1,12 +1,12 @@
 -- Text formatting
-vim.o.encoding = 'utf-8'
-vim.o.fileformat = 'unix'
-vim.o.colorcolumn = '81'
-vim.o.tabstop = 4
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
-vim.o.autoindent = true
-vim.o.expandtab = false
+vim.opt.encoding = 'utf-8'
+vim.opt.fileformat = 'unix'
+vim.opt.colorcolumn = '81'
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.autoindent = true
+vim.opt.expandtab = false
 
 -- Statusline
 vim.cmd[[set statusline=]]
