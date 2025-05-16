@@ -8,14 +8,6 @@ vim.opt.shiftwidth = 4
 vim.opt.autoindent = true
 vim.opt.expandtab = false
 
--- Statusline
-vim.cmd[[set statusline=]]
-vim.cmd[[set statusline+=\ %F]]     -- Full file path
-vim.cmd[[set statusline+=%=]]       -- Space
-vim.cmd[[set statusline+=\ %y]]     -- Filetype                    
-vim.cmd[[set statusline+=\ [%{&fileencoding}] ]]                   
-vim.cmd[[set statusline+=\ %l:%c]]  -- Current line and character
-
 -- Disable builtins
 vim.g.loaded_tutor             = 1
 vim.g.loaded_spec              = 1
